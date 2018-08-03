@@ -37,9 +37,8 @@ allprojects {
                 'com.google.guava:guava:23.0',
                 'javax:javaee-api:8.0',
                 'org.mongodb:mongo-java-driver:3.0.2',
-                'org.apache.commons:commons-lang3:3.6'
-
-
+                'org.apache.commons:commons-lang3:3.6',
+                'org.glassfish.jersey.core:jersey-common:2.22.2'
 
 
         testCompile 'org.meanbean:meanbean:2.0.3',
