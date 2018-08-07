@@ -22,6 +22,7 @@ class MongoAutoCompleteHandler extends GroovyHandler {
         final String key = queryParameters.get("key")
         final String fieldNameString = request.path
 
+        context.header("Access-Control-Allow-Origin", "*")
         FieldName.fromId(fieldNameString).ifPresent() {
             fieldName ->
                 final List<AutoCompleteEntity> autoCompleteEntities = autoCompleteSource.getData(key)
