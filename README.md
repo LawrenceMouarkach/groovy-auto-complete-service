@@ -15,6 +15,11 @@
 ##### Query parameters
 - key=${airportNameVariable} i.e key=manchester
 
-##### Examples 
+##### API Examples 
 - Full: `localhost:5050/5ad3d9700000000000000000?key=manchester`
 - Partial: `localhost:5050/5ad3d9700000000000000000?key=man`
+
+##### Front End
+- Simple "Search Engine" front end supplied via index.html
+- HTML & CSS found in resources along with JS in the js directory
+- Results rendered as a table
