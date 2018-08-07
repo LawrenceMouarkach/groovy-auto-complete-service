@@ -4,7 +4,8 @@ function autoComplete() {
     $.getJSON({
         url: "http://localhost:5050/5ad3d9700000000000000000?key=" + linkName,
         success: function (result, status, xhr) {
-            var table = $("<table><tr><th>Type</th><th>Name</th><th>Iata Code</th></tr>");
+            var table = $("<table class='autoCompleteTable'><thead><tr><th>Type</th><th>Name</th><th>Iata Code</th></tr><thead>");
+            table.append("<tbody>")
             var tr;
             for (var i = 0; i < result.length; i++) {
                 tr = $("<tr>");
@@ -14,6 +15,7 @@ function autoComplete() {
                 tr.append("</tr>");
                 table.append(tr);
             }
+            table.append("</tbody>");
             table.append("</table>");
             $("#autoCompleteData").html(table);
         }
