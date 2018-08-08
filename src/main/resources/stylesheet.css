@@ -55,3 +55,8 @@ table.autoCompleteTable tfoot .links a{
   padding: 2px 8px;
   border-radius: 5px;
 }
+
+div.doctori-search {
+  color: #398AA4;
+  text-align: center;
+}
