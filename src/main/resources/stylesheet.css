@@ -11,7 +11,7 @@
 table.autoCompleteTable {
   border: 3px solid #555555;
   background-color: #555555;
-  width: 400px;
+  width: 100%;
   text-align: center;
   border-collapse: collapse;
 }
@@ -35,7 +35,7 @@ table.autoCompleteTable thead th {
   font-size: 15px;
   font-weight: bold;
   color: #FFFFFF;
-  text-align: left;
+  text-align: center;
   border-left: 2px solid #398AA4;
 }
 table.autoCompleteTable thead th:first-child {
