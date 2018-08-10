@@ -5,41 +5,56 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="js/auto-complete.js"></script>
 </head>
 <body>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
       integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<div class="container">
-    <br/>
-    <div class="doctori-search">
-        <h1>Doctori Search</h1>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8">
-            <form class="card card-sm">
-                <div class="card-body row no-gutters align-items-center">
-                    <div class="col-auto">
-                        <i class="fas fa-search h4 text-body"></i>
-                    </div>
-                    <!--end of col-->
-                    <div class="col">
-                        <input id="search-input" class="form-control form-control-lg form-control-borderless" type="search"
-                               placeholder="Search topics or keywords">
-                    </div>
-                    <!--end of col-->
-                    <div class="col-auto">
-                        <button name="submit" class="btn btn-lg btn-success" type="submit" value="Submit" onclick="return autoComplete()">Search
-                        </button>
-                    </div>
-                    <!--end of col-->
-                </div>
-            </form>
-        </div>
-        <!--end of col-->
+<div class="doctori-search">
+    <div class="doctori-search__container">
+        <p class="doctori-search__container__text">
+            Doctori
+        </p>
+
+        <ul class="doctori-search__container__list">
+            <li class="doctori-search__container__list__item">Search</li>
+            <li class="doctori-search__container__list__item">Find</li>
+            <li class="doctori-search__container__list__item">Look</li>
+            <li class="doctori-search__container__list__item">Locate</li>
+        </ul>
     </div>
 </div>
-<div id="autoCompleteData" align="center"></div>
+<div class="container">
+    <br/>
+    <div class="search-bar">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <form class="card card-sm">
+                    <div class="card-body row no-gutters align-items-center">
+                        <div class="col-auto">
+                            <i class="fas fa-search h4 text-body"></i>
+                        </div>
+                        <!--end of col-->
+                        <div class="col">
+                            <input id="search-input" class="form-control form-control-lg form-control-borderless" type="search"
+                                   placeholder="Search topics or keywords">
+                        </div>
+                        <!--end of col-->
+                        <div class="col-auto">
+                            <button name="submit" class="btn btn-lg btn-success" type="submit" value="Submit" onclick="return autoComplete()">Search
+                            </button>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                </form>
+            </div>
+            <!--end of col-->
+        </div>
+    </div>
+</div>
+<div id="autoCompleteData" class="autoCompleteData" align="center"></div>
 </body>
 </html>
