@@ -74,9 +74,8 @@ body {
 }
 
 .container {
-position: absolute;
-  top: 11%;
-  left: 15%;
+position: relative;
+  top: 14%;
 }
 
 .doctori-search {
