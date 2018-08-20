@@ -10,7 +10,7 @@ function autoComplete() {
             for (var i = 0; i < result.length; i++) {
                 var buttonTitle = result[i].iata_code
                 var searchQuery = result[i].name
-                var navigate = "parent.open('https://www.google.co.uk/search?q="+searchQuery+"&oq="+ searchQuery+"')"
+                var navigate = "parent.open('https://www.google.co.uk/search?q="+searchQuery+"&oq="+ searchQuery+"&btnI')"
                 tr = $("<tr>");
                 tr.append("<td>" + result[i].type+ "</td>");
                 tr.append("<td>" + result[i].name + "</td>");
