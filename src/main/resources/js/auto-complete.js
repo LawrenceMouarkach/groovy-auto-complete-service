@@ -27,3 +27,12 @@ function autoComplete() {
     });
     return false
 }
+
+function myFunction() {
+    var x = document.getElementById("doctori-topnav");
+    if (x.className === "doctori-topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "doctori-topnav";
+    }
+}
